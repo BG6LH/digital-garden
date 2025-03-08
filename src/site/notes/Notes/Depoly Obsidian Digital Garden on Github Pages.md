@@ -2,9 +2,6 @@
 {"dg-publish":true,"dg-path":"Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages.md","permalink":"/Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/","title":"Depoly Obsidian Digital Garden on Github Pages","tags":["clippings","github-pages","github","11ty","ODG","nodejs"]}
 ---
 
-
-# Depoly Obsidian Digital Garden on Github Pages
----
 > [!NOTE]
 > #ODG : Obsidian Digital Garden, in short.
 
