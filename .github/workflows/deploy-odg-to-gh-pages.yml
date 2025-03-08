@@ -1,4 +1,4 @@
-name: Deploy ODG Site to GitHub Pages
+name: Deploy Obsidian Digital Garden Site to GitHub Pages
 
 # 仅监控 src/site 目录下文件的新增、修改或删除
 on:
