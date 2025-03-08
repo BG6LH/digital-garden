@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/welcome/","tags":["gardenEntry"]}
+{"dg-publish":true,"dg-path":"welcome.md","dg-permalink":"welcome","permalink":"/welcome/","tags":["gardenEntry"]}
 ---
 
 
-# Welcome to BG6LH's Digital Garden
+# 欢迎来到 BG6LH 的 Digtal Garden
 ---
 - 这是一个新的开始，我正在使用Obsidian建立我的个人知识库，并且用上了AI，管理、建设我的本地化知识体系，包括我的工作、及爱好
 - 这些年，我玩业余无线电的心得，大多数都发布在我的微信公众号上
@@ -13,3 +13,4 @@
 
 2025-03-08 BG6LH
 
+![img-Welcome.jpg|800](/img/user/Digital%20Garden/assets/img-Welcome.jpg)
