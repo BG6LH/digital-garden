@@ -3,20 +3,22 @@
     <title>Digital Garden</title>
     <link href="https://bg6lh.github.io/digital-garden/feed.xml" rel="self" />
     <link href="https://bg6lh.github.io/digital-garden" />
-    <updated>2025-03-08T06:37:53Z</updated>
+    <updated>2025-03-08T06:46:51Z</updated>
     <id>https://bg6lh.github.io/digital-garden</id>
         <entry>
             <title>
                 Welcome
                 
             </title>
-            <updated>2025-03-08T06:37:46Z</updated>
+            <updated>2025-03-08T06:46:43Z</updated>
             <id>https://bg6lh.github.io/digital-garden/</id>
             <content type="html">
                 &lt;h1 id=&quot;welcome&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h1&gt;
 &lt;h2 id=&quot;welcome-1&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h2&gt;
 &lt;p&gt;Welcome to the digital garden testing vault!&lt;/p&gt;
-&lt;p&gt;This vault is part of the &lt;code&gt;obsidian-digital-garden&lt;/code&gt; repository, and meant to act as a staging area for&lt;/p&gt;
+&lt;p&gt;这是一个测试页面&lt;br /&gt;
+ &lt;br /&gt;
+This vault is part of the &lt;code&gt;obsidian-digital-garden&lt;/code&gt; repository, and meant to act as a staging area for&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;providing a maintainable testing ground for the digital garden features&lt;/li&gt;
 &lt;li&gt;documenting features in action&lt;/li&gt;
