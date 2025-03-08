@@ -1,0 +1,38 @@
+name: Deploy ODG Site to GitHub Pages
+
+# 仅监控 src/site 目录下文件的新增、修改或删除
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/site/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出 main 分支代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 2. 设置 Node.js 环境（若需要，可根据项目需求修改版本）
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # 3. 如有构建需求（如果 ODG 插件已经在 src/site 生成了静态文件，可忽略此步）
+      # - name: Build ODG Site
+      #   run: npm run build
+
+      # 4. 使用 peaceiris/actions-gh-pages 将 src/site 部署到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./src/site
+          publish_branch: gh-pages
