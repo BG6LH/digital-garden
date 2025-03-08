@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bg6lh.github.io/digital-garden">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bg6lh.github.io/digital-garden/">
     <title>Digital Garden</title>
-    <link href="https://bg6lh.github.io/digital-garden/feed.xml" rel="self" />
-    <link href="https://bg6lh.github.io/digital-garden" />
-    <updated>2025-03-08T15:21:43Z</updated>
-    <id>https://bg6lh.github.io/digital-garden</id>
+    <link href="https://bg6lh.github.io/digital-garden//feed.xml" rel="self" />
+    <link href="https://bg6lh.github.io/digital-garden/" />
+    <updated>2025-03-08T15:27:56Z</updated>
+    <id>https://bg6lh.github.io/digital-garden/</id>
         <entry>
             <title>
                 Welcome
                 
             </title>
-            <updated>2025-03-08T15:21:36Z</updated>
-            <id>https://bg6lh.github.io/digital-garden/</id>
+            <updated>2025-03-08T15:27:46Z</updated>
+            <id>https://bg6lh.github.io/digital-garden//</id>
             <content type="html">
                 &lt;h1 id=&quot;welcome&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h1&gt;
 &lt;h2 id=&quot;welcome-1&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h2&gt;
 &lt;hr /&gt;
 &lt;p&gt;Welcome to the digital garden testing vault!&lt;br /&gt;
- &lt;br /&gt;
+ ---&lt;br /&gt;
 This vault is part of the &lt;code&gt;obsidian-digital-garden&lt;/code&gt; repository, and meant to act as a staging area for&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;providing a maintainable testing ground for the digital garden features&lt;/li&gt;
@@ -42,6 +42,6 @@ This vault is part of the &lt;code&gt;obsidian-digital-garden&lt;/code&gt; repos
 &lt;/ul&gt;
 
             </content>
-            <link href="https://bg6lh.github.io/digital-garden/" />
+            <link href="https://bg6lh.github.io/digital-garden//" />
         </entry>
 </feed>
