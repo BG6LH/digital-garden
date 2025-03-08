@@ -3,14 +3,14 @@
     <title>BG6LH&#39;s Digital Garden</title>
     <link href="https://bg6lh.github.io//feed.xml" rel="self" />
     <link href="https://bg6lh.github.io/" />
-    <updated>2025-03-08T19:20:03Z</updated>
+    <updated>2025-03-08T19:32:19Z</updated>
     <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
                 Welcome to BG6LH&#39;s Digital Garden
                 
             </title>
-            <updated>2025-03-08T19:19:53Z</updated>
+            <updated>2025-03-08T19:32:07Z</updated>
             <id>https://bg6lh.github.io//</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/Welcome%20to%20BG6LH&#39;s%20Digital%20Garden/img-Welcome%20to%20BG6LH&#39;s%20Digital%20Garden.jpg&quot; alt=&quot;img-Welcome to BG6LH&#39;s Digital Garden.jpg|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
@@ -33,14 +33,16 @@
                 Depoly Obsidian Digital Garden on Github Pages
                 
             </title>
-            <updated>2025-03-08T19:19:53Z</updated>
+            <updated>2025-03-08T19:32:07Z</updated>
             <id>https://bg6lh.github.io//Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/</id>
             <content type="html">
-                &lt;blockquote&gt;
+                &lt;h1 id=&quot;depoly-obsidian-digital-garden-on-github-pages&quot; tabindex=&quot;-1&quot;&gt;Depoly Obsidian Digital Garden on Github Pages&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;blockquote&gt;
 &lt;p&gt;[!NOTE]&lt;br /&gt;
 &lt;a class=&quot;tag&quot; onclick=&quot;toggleTagSearch(this)&quot; data-content=&quot;#ODG&quot;&gt;#ODG&lt;/a&gt; : Obsidian Digital Garden, in short.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;depoly-obsidian-digital-garden-on-github-pages&quot; tabindex=&quot;-1&quot;&gt;Depoly Obsidian Digital Garden on Github Pages&lt;/h1&gt;
+&lt;h2 id=&quot;前言&quot; tabindex=&quot;-1&quot;&gt;前言&lt;/h2&gt;
 &lt;p&gt;在ChatGPT协助下，成功在Github Pages上直接部署了Obsidian Digital Garden插件的网站。&lt;/p&gt;
 &lt;p&gt;该页面提供了一个基于 GitHub Actions 的部署策略示例，用于将 Obsidian 文档自动构建并发布到 GitHub Pages 的 gh-pages 分支上，无需依赖 Vercel 或 Netlify。&lt;/p&gt;
 &lt;ul&gt;
@@ -57,11 +59,10 @@
 &lt;li&gt;当 src 目录下有新增或修改文件时，自动触发构建并将生成的静态文件发布到 gh-pages 分支；&lt;/li&gt;
 &lt;li&gt;完全基于 GitHub Pages 部署，不依赖 Vercel 或 Netlify。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;部署摘要&lt;/p&gt;
+&lt;h2 id=&quot;部署摘要&quot; tabindex=&quot;-1&quot;&gt;部署摘要&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;一般情况下，不必自己创建gh-pages分支，代码中有Action的workflow脚本，部署之后可成功执行。&lt;/li&gt;
 &lt;li&gt;如果在本地的Obsidian里移动了笔记文件的位置，在发布后，老的md文件很可能仍然会存在github上/src/site/notes里原有的位置。当定义了“永久链接”会引发11ty的重名文件冲突，导致Action的deploy动作失败。通常情况下一定之后要去github上找到老的删掉。&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;git-hub-actions-workflow&quot; tabindex=&quot;-1&quot;&gt;示例 GitHub Actions Workflow&lt;/h2&gt;
 &lt;p&gt;在仓库 main 分支下创建目录 &lt;code&gt;.github/workflows&lt;/code&gt;，并新建文件（例如 &lt;code&gt;deploy.yml&lt;/code&gt;），文件内容如下：&lt;/p&gt;
