@@ -1,9 +1,8 @@
-name: Deploy Obsidian Digital Garden Site to GitHub Pages
+name: Deploy ODG Site to GitHub Pages
 
 permissions:
   contents: write
 
-# 仅监控 src/site 目录下文件的新增、修改或删除
 on:
   push:
     branches:
@@ -16,26 +15,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. 检出 main 分支代码
+      # 1. 检出代码
       - name: Checkout code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      # 2. 设置 Node.js 环境（若需要，可根据项目需求修改版本）
+      # 2. 设置 Node.js 环境（可根据需要调整版本）
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      # 3. 如有构建需求（如果 ODG 插件已经在 src/site 生成了静态文件，可忽略此步）
-      # - name: Build ODG Site
-      #   run: npm run build
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm install
 
-      # 4. 使用 peaceiris/actions-gh-pages 将 src/site 部署到 gh-pages 分支
+      # 4. 构建静态站点（Eleventy 根据 .eleventy.js 配置将 src/site 构建到 dist 目录）
+      - name: Build ODG Site with Eleventy
+        run: npx @11ty/eleventy
+
+      # 5. 部署生成的 dist 目录到 gh-pages 分支
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src/site
+          publish_dir: ./dist
           publish_branch: gh-pages
