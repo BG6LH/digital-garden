@@ -10,7 +10,7 @@
 
 ## 前言
 
-在ChatGPT协助下，成功在Github Pages上直接部署了Obsidian Digital Garden插件的网站。
+在ChatGPT协助下，我成功在Github Pages上直接部署了Obsidian Digital Garden插件的网站。
 
 该页面提供了一个基于 GitHub Actions 的部署策略示例，用于将 Obsidian 文档自动构建并发布到 GitHub Pages 的 gh-pages 分支上，无需依赖 Vercel 或 Netlify。
 
@@ -29,10 +29,13 @@
 3. 完全基于 GitHub Pages 部署，不依赖 Vercel 或 Netlify。
 
 
-## 部署摘要
+## 部署避坑
 
-- 一般情况下，不必自己创建gh-pages分支，代码中有Action的workflow脚本，部署之后可成功执行。
-- 如果在本地的Obsidian里移动了笔记文件的位置，在发布后，老的md文件很可能仍然会存在github上/src/site/notes里原有的位置。当定义了“永久链接”会引发11ty的重名文件冲突，导致Action的deploy动作失败。通常情况下一定之后要去github上找到老的删掉。
+- 一般情况下，不必自己创建gh-pages分支，代码中有Action的workflow脚本，部署之后可成功自行创建gh-pages分支。
+- 如果在本地的Obsidian里移动了笔记文件的位置，在发布后，老的md文件很可能仍然会存在main分支的 `/src/site/notes`里原有的位置。当定义了“永久链接”时，会引发11ty的重名文件冲突，导致Action的deploy动作失败。通常情况下一定之后要去github上找到老的删掉。
+- 相关话题：为了保证URL可读性，使用中文名字做笔记名时，可以添加`dg-path`或者`dg-permalink`，定一个英文名，让页面渲染时产生一个英文的URL。
+- 在Obsidian里修改ODG插件的设置，要在下一次发布时触发了Action重新Deploy时才会生效。
+
 
 ## 示例 GitHub Actions Workflow
 
@@ -108,20 +111,21 @@ jobs:
 
 ## 404问题解决
 
-出现 404 页面可能有以下几个原因，你可以逐项排查和解决：
+如果部署之后出现 404 页面可能有以下几个原因，你可以逐项排查和解决：
 
 1. **GitHub Pages 源设置**  
-    请确认仓库的 GitHub Pages 配置中，Source 选项已正确设置为 gh-pages 分支的根目录。如果曾经部署过其他目录（例如 /src/site），可能会导致配置残留。你可以进入仓库设置 → Pages，检查并确保“发布来源”设置为 gh-pages 分支的根目录。
-    
+	- 请确认仓库的 GitHub Pages 配置中，Source 选项已正确设置为 gh-pages 分支的根目录。如果曾经部署过其他目录（例如 /src/site），可能会导致配置残留。你可以进入仓库设置 → Pages，检查并确保“发布来源”设置为 gh-pages 分支的根目录。
+	  
 2. **分支内容是否正确**  
-    根据最新配置，Eleventy 构建生成的静态文件位于 dist 目录，并通过 Action 部署到 gh-pages 分支。请确认 gh-pages 分支根目录下是否存在正确的 index.html 文件以及其他必要的资源。你可以直接在 GitHub 仓库的 gh-pages 分支中查看构建输出文件。如果旧的部署曾将整个 main 分支内容推送过来，可能需要清理 gh-pages 分支后再重新部署。
-    
-    - 建议先备份当前内容，然后删除 gh-pages 分支，再通过 GitHub UI 或命令行创建一个空的 gh-pages 分支，再重新触发 Action 部署。
+	- 根据最新配置，Eleventy 构建生成的静态文件位于 dist 目录，并通过 Action 部署到 gh-pages 分支。请确认 gh-pages 分支根目录下是否存在正确的 index.html 文件以及其他必要的资源。你可以直接在 GitHub 仓库的 gh-pages 分支中查看构建输出文件。如果旧的部署曾将整个 main 分支内容推送过来，可能需要清理 gh-pages 分支后再重新部署。
+	- 建议先备份当前内容，然后删除 gh-pages 分支，再通过 GitHub UI 或命令行创建一个空的 gh-pages 分支，再重新触发 Action 部署。
+	  
 3. **浏览器缓存问题**  
-    有时浏览器缓存可能导致显示 404 页面，建议尝试强制刷新页面（例如使用 Ctrl+F5 或清除缓存）来查看最新状态。
-    
+	- 有时浏览器缓存可能导致显示 404 页面，建议尝试强制刷新页面（例如使用 Ctrl+F5 或清除缓存）来查看最新状态。    
+	- 强烈推荐用浏览器的“无痕模式”调试前端页面。
+	  
 4. **自定义域名及 DNS 配置**  
-    如果你设置了自定义域名，也请确认 DNS 记录正确，并且 GitHub Pages 的 CNAME 文件（如果使用）已正确配置。
+	- 如果你设置了自定义域名，也请确认 DNS 记录正确，并且 GitHub Pages 的 CNAME 文件（如果使用）已正确配置。
     
 
 综上建议：
