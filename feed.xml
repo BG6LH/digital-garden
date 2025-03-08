@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bg6lh.github.io/digital-garden/">
-    <title>Digital Garden</title>
-    <link href="https://bg6lh.github.io/digital-garden//feed.xml" rel="self" />
-    <link href="https://bg6lh.github.io/digital-garden/" />
-    <updated>2025-03-08T15:47:52Z</updated>
-    <id>https://bg6lh.github.io/digital-garden/</id>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://bg6lh.github.io/">
+    <title>BG6LH&#39;s Digital Garden</title>
+    <link href="https://bg6lh.github.io//feed.xml" rel="self" />
+    <link href="https://bg6lh.github.io/" />
+    <updated>2025-03-08T16:18:50Z</updated>
+    <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
                 Welcome
                 
             </title>
-            <updated>2025-03-08T15:47:44Z</updated>
-            <id>https://bg6lh.github.io/digital-garden//</id>
+            <updated>2025-03-08T16:18:43Z</updated>
+            <id>https://bg6lh.github.io//</id>
             <content type="html">
-                &lt;h1 id=&quot;welcome&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h1&gt;
-&lt;h2 id=&quot;welcome-1&quot; tabindex=&quot;-1&quot;&gt;Welcome&lt;/h2&gt;
+                &lt;h1 id=&quot;welcome-to-bg-6-lh-s-digital-garden&quot; tabindex=&quot;-1&quot;&gt;Welcome to BG6LH&#39;s Digital Garden&lt;/h1&gt;
 &lt;hr /&gt;
-&lt;p&gt;Welcome to the digital garden testing vault!&lt;/p&gt;
-&lt;p&gt;This vault is part of the &lt;code&gt;obsidian-digital-garden&lt;/code&gt; repository, and meant to act as a staging area for&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;providing a maintainable testing ground for the digital garden features&lt;/li&gt;
-&lt;li&gt;documenting features in action&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Hopefully in the future it can be part of automated testing too! Say, snapshot testing the output from this garden would actually be relatively easy! :)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!info] See README for instructions on adding info to .env for testing&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;snapshot-tests&quot; tabindex=&quot;-1&quot;&gt;Snapshot tests&lt;/h2&gt;
-&lt;p&gt;This test vault enables snapshot testing of the garden compilation! To generate the snapshot:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;run &lt;code&gt;Generate Garden Snapshot&lt;/code&gt; from the command palette&lt;/li&gt;
-&lt;li&gt;Snapshot generation is also run on plugin load.&lt;/li&gt;
+&lt;li&gt;这是一个新的开始，我正在使用Obsidian建立我的个人知识库，并且用上了AI，管理、建设我的本地化知识体系，包括我的工作、及爱好&lt;/li&gt;
+&lt;li&gt;这些年，我玩业余无线电的心得，大多数都发布在我的微信公众号上&lt;/li&gt;
+&lt;li&gt;但是微信公众号是一个封闭的体系，对搜索额引擎和AI世界很不友好&lt;/li&gt;
+&lt;li&gt;我会逐渐把一些文章搬回到我的这个小花园里&lt;/li&gt;
+&lt;li&gt;顺便把一些当时留下的错误信息纠正过来&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;plugins&quot; tabindex=&quot;-1&quot;&gt;Plugins&lt;/h2&gt;
-&lt;p&gt;This garden should have the following plugins&lt;/p&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bg6lh.github.io/404&quot; target=&quot;&quot;&gt;PE1 Transcluded excalidraw&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_1&quot;&gt; &lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://bg6lh.github.io/404&quot; target=&quot;&quot;&gt;PD1 Dataview&lt;/a&gt;&lt;/label&gt;&lt;/li&gt;
-&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_2&quot;&gt; hot reload (reloads obsidian dev plugins on changes)&lt;/label&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;2025-03-08 BG6LH&lt;/p&gt;
 
             </content>
-            <link href="https://bg6lh.github.io/digital-garden//" />
+            <link href="https://bg6lh.github.io//" />
         </entry>
 </feed>
