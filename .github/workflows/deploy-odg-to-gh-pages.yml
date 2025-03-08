@@ -1,5 +1,8 @@
 name: Deploy Obsidian Digital Garden Site to GitHub Pages
 
+permissions:
+  contents: write
+
 # 仅监控 src/site 目录下文件的新增、修改或删除
 on:
   push:
