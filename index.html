@@ -330,7 +330,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2025-03-08T06:46:51.192Z';
+        const searchIndexDate = '2025-03-08T08:25:52.521Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -342,9 +342,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2025-03-08T06:46:51.192Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2025-03-08T08:25:52.521Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2025-03-08T06:46:51.192Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2025-03-08T08:25:52.521Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -596,8 +596,7 @@
       
       <h1 id="welcome" tabindex="-1">Welcome</h1>
 <h2 id="welcome-1" tabindex="-1">Welcome</h2>
-<p>Welcome to the digital garden testing vault!</p>
-<p>这是一个测试页面<br>
+<p>Welcome to the digital garden testing vault!<br>
  <br>
 This vault is part of the <code>obsidian-digital-garden</code> repository, and meant to act as a staging area for</p>
 <ol>
