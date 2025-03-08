@@ -1,7 +1,7 @@
 [
 {
 		"title": "Welcome",
-		"date":"Sat Mar 08 2025 15:08:38 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sat Mar 08 2025 15:11:32 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "Welcome\nWelcome\nWelcome to the digital garden testing vault!\n \nThis vault is part of the obsidian-digital-garden repository, and meant to act as a staging area for\n\nproviding a maintainable testing ground for the digital garden features\ndocumenting features in action\n\nHopefully in the future it can be part of automated testing too! Say, snapshot testing the output from this garden would actually be relatively easy! :)\n\n[!info] See README for instructions on adding info to .env for testing\n\nSnapshot tests\nThis test vault enables snapshot testing of the garden compilation! To generate the snapshot:\n\nrun Generate Garden Snapshot from the command palette\nSnapshot generation is also run on plugin load.\n\nPlugins\nThis garden should have the following plugins\n\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">PE1 Transcluded excalidraw</a>\n<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">PD1 Dataview</a>\nhot reload (reloads obsidian dev plugins on changes)",
 		"tags": [ "note","gardenEntry"]
