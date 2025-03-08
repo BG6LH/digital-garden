@@ -3,10 +3,12 @@
 ---
 
 
+# Depoly Obsidian Digital Garden on Github Pages
+---
 > [!NOTE]
 > #ODG : Obsidian Digital Garden, in short.
 
-# Depoly Obsidian Digital Garden on Github Pages
+## 前言
 
 在ChatGPT协助下，成功在Github Pages上直接部署了Obsidian Digital Garden插件的网站。
 
@@ -27,12 +29,10 @@
 3. 完全基于 GitHub Pages 部署，不依赖 Vercel 或 Netlify。
 
 
-部署摘要
+## 部署摘要
 
 - 一般情况下，不必自己创建gh-pages分支，代码中有Action的workflow脚本，部署之后可成功执行。
 - 如果在本地的Obsidian里移动了笔记文件的位置，在发布后，老的md文件很可能仍然会存在github上/src/site/notes里原有的位置。当定义了“永久链接”会引发11ty的重名文件冲突，导致Action的deploy动作失败。通常情况下一定之后要去github上找到老的删掉。
-- 
-
 
 ## 示例 GitHub Actions Workflow
 
