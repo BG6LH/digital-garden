@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
 <head>
-<title>Welcome to BG6LH&#39;s Digital Garden</title>
+<title>Depoly Obsidian Digital Garden on Github Pages</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -73,13 +73,13 @@ CTRL + K
 <span class="foldername">Docs</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/">Depoly Obsidian Digital Garden on Github Pages </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/">Depoly Obsidian Digital Garden on Github Pages </a>
 </div>
 </div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Welcome to BG6LH&#39;s Digital Garden </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Welcome to BG6LH&#39;s Digital Garden </a>
 </div>
 </div>
 </div>
@@ -110,20 +110,160 @@ CTRL + K
 <header>
 <div class="header-meta">
 <div class="header-tags">
+<a class="tag" onclick="toggleTagSearch(this)">
+#clippings
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#github-pages
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#github
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#11ty
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#ODG
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#nodejs
+</a>
 </div>
 </div>
 </header>
-<p><img src="/img/user/assets/Welcome%20to%20BG6LH's%20Digital%20Garden/img-Welcome%20to%20BG6LH's%20Digital%20Garden.jpg" alt="img-Welcome to BG6LH's Digital Garden.jpg|800" width="800px"></p>
-<h1 id="bg-6-lh-digtal-garden" tabindex="-1">欢迎来到 BG6LH 的 Digtal Garden</h1>
-<hr>
+<div class="callout" data-callout="note"><div class="callout-title"><div class="callout-title-inner">Note</div></div>
+<div class="callout-content">
+<p>
+<a class="tag" onclick="toggleTagSearch(this)" data-content="#ODG">#ODG</a> : Obsidian Digital Garden, in short.</p>
+</div></div>
+<h1 id="depoly-obsidian-digital-garden-on-github-pages" tabindex="-1">Depoly Obsidian Digital Garden on Github Pages</h1>
+<p>在ChatGPT协助下，成功在Github Pages上直接部署了Obsidian Digital Garden插件的网站。</p>
+<p>该页面提供了一个基于 GitHub Actions 的部署策略示例，用于将 Obsidian 文档自动构建并发布到 GitHub Pages 的 gh-pages 分支上，无需依赖 Vercel 或 Netlify。</p>
 <ul>
-<li>这是一个新的开始，我正在使用Obsidian建立我的个人知识库，并且用上了AI，管理、建设我的本地化知识体系，包括我的工作、及爱好</li>
-<li>这些年，我玩业余无线电的心得，大多数都发布在我的微信公众号上</li>
-<li>但是微信公众号是一个封闭的体系，对搜索额引擎和AI世界很不友好</li>
-<li>我会逐渐把一些文章搬回到我的这个小花园里</li>
-<li>顺便把一些当时留下的错误信息纠正过来</li>
+<li>自动触发构建：当 <code>src/site/**</code> 目录下有新增或修改文件时。</li>
+<li>部署目标：gh-pages 分支</li>
+<li>使用 Node.js 16 运行构建命令</li>
+<li>部署工具：<code>peaceiris/actions-gh-pages</code>、<code>node.js</code></li>
+<li>尽管ODG是基于 <a class="tag" onclick="toggleTagSearch(this)" data-content="#11ty">#11ty</a> 构建的，但是不要从11ty安装，要用 node.js包安装。这样才能保证部署了全部的插件。</li>
 </ul>
-<p>2025-03-08 BG6LH</p>
+<hr>
+<p>下面给出一个基于 GitHub Actions 的最新部署策略示例，满足如下要求：</p>
+<ol>
+<li>生成器代码保留在 main 分支；</li>
+<li>当 src 目录下有新增或修改文件时，自动触发构建并将生成的静态文件发布到 gh-pages 分支；</li>
+<li>完全基于 GitHub Pages 部署，不依赖 Vercel 或 Netlify。</li>
+</ol>
+<p>部署摘要</p>
+<ul>
+<li>一般情况下，不必自己创建gh-pages分支，代码中有Action的workflow脚本，部署之后可成功执行。</li>
+<li>如果在本地的Obsidian里移动了笔记文件的位置，在发布后，老的md文件很可能仍然会存在github上/src/site/notes里原有的位置。当定义了“永久链接”会引发11ty的重名文件冲突，导致Action的deploy动作失败。通常情况下一定之后要去github上找到老的删掉。</li>
+<li></li>
+</ul>
+<h2 id="git-hub-actions-workflow" tabindex="-1">示例 GitHub Actions Workflow</h2>
+<p>在仓库 main 分支下创建目录 <code>.github/workflows</code>，并新建文件（例如 <code>deploy.yml</code>），文件内容如下：</p>
+<pre><code class="language-yaml">name: Deploy ODG Site to GitHub Pages
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/site/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+
+    steps:
+      # 1. 检出代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 2. 设置 Node.js 环境（可根据需要调整版本）
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      # 3. 安装依赖
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 构建静态站点（不要用11ty部署，要用npm部署整个包，因为ODG有自定义的打包插件）
+      - name: Build ODG Site with npm
+        run: npm run build --if-present
+
+      # 5. 部署生成的 dist 目录到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+
+</code></pre>
+<h3 id="说明" tabindex="-1">说明</h3>
+<ul>
+<li>
+<p><strong>触发条件</strong><br>
+上述工作流配置在 <code>main</code> 分支中监控 <code>src</code> 目录的所有变化（<code>src/**</code>）。每当有文件添加或修改时，工作流将自动触发。</p>
+</li>
+<li>
+<p><strong>构建步骤</strong></p>
+</li>
+</ul>
+<ol>
+<li>使用 <code>actions/checkout</code> 检出最新代码。</li>
+<li>设置 Node.js 环境（此处选择了 Node.js 16，可根据实际需求调整）。</li>
+<li>通过 <code>npm install</code> 安装依赖，并运行 <code>npm run build</code> 生成静态文件，假设生成目录为 <code>dist</code>。如果你的项目生成目录不是 <code>dist</code>，请相应调整 <code>publish_dir</code> 的路径。</li>
+</ol>
+<ul>
+<li>
+<p><strong>部署步骤</strong><br>
+使用 <a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">peaceiris/actions-gh-pages</a> 部署生成的文件到 <code>gh-pages</code> 分支。部署时利用内置的 <code>${{ secrets.GITHUB_TOKEN }}</code> 自动进行认证，无需额外设置。</p>
+</li>
+<li>
+<p><strong>仓库配置</strong><br>
+部署成功后，请确保在 GitHub 仓库设置中，GitHub Pages 的来源选择为 <code>gh-pages</code> 分支，以便正确显示你的 Obsidian Digital Garden。</p>
+</li>
+</ul>
+<p>通过以上配置，Obsidian 文档将从 main 分支的 src 目录自动构建，并利用最新的 GitHub Actions 部署策略发布到 GitHub Pages 的 gh-pages 分支上。这样就实现了一个纯 GitHub Pages 的自动部署流程，无需依赖第三方平台。</p>
+<h2 id="404" tabindex="-1">404问题解决</h2>
+<p>出现 404 页面可能有以下几个原因，你可以逐项排查和解决：</p>
+<ol>
+<li>
+<p><strong>GitHub Pages 源设置</strong><br>
+请确认仓库的 GitHub Pages 配置中，Source 选项已正确设置为 gh-pages 分支的根目录。如果曾经部署过其他目录（例如 /src/site），可能会导致配置残留。你可以进入仓库设置 → Pages，检查并确保“发布来源”设置为 gh-pages 分支的根目录。</p>
+</li>
+<li>
+<p><strong>分支内容是否正确</strong><br>
+根据最新配置，Eleventy 构建生成的静态文件位于 dist 目录，并通过 Action 部署到 gh-pages 分支。请确认 gh-pages 分支根目录下是否存在正确的 index.html 文件以及其他必要的资源。你可以直接在 GitHub 仓库的 gh-pages 分支中查看构建输出文件。如果旧的部署曾将整个 main 分支内容推送过来，可能需要清理 gh-pages 分支后再重新部署。</p>
+<ul>
+<li>建议先备份当前内容，然后删除 gh-pages 分支，再通过 GitHub UI 或命令行创建一个空的 gh-pages 分支，再重新触发 Action 部署。</li>
+</ul>
+</li>
+<li>
+<p><strong>浏览器缓存问题</strong><br>
+有时浏览器缓存可能导致显示 404 页面，建议尝试强制刷新页面（例如使用 Ctrl+F5 或清除缓存）来查看最新状态。</p>
+</li>
+<li>
+<p><strong>自定义域名及 DNS 配置</strong><br>
+如果你设置了自定义域名，也请确认 DNS 记录正确，并且 GitHub Pages 的 CNAME 文件（如果使用）已正确配置。</p>
+</li>
+</ol>
+<p>综上建议：</p>
+<ul>
+<li>检查 GitHub Pages 设置，确保使用 gh-pages 分支根目录。</li>
+<li>确认 gh-pages 分支内容为 Eleventy 生成的 dist 文件内容（包含 index.html）。</li>
+<li>清理可能的旧缓存，必要时重新创建 gh-pages 分支再触发部署。</li>
+<li>如果使用自定义域名，请检查 DNS 配置。</li>
+</ul>
+<p>按照这些步骤排查后，再观察前端页面是否能正确加载。</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -165,7 +305,17 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#bg-6-lh-digtal-garden">欢迎来到 BG6LH 的 Digtal Garden</a>
+<li><a href="#depoly-obsidian-digital-garden-on-github-pages">Depoly Obsidian Digital Garden on Github Pages</a>
+<ol>
+<li><a href="#git-hub-actions-workflow">示例 GitHub Actions Workflow</a>
+<ol>
+<li><a href="#说明">说明</a>
+</li>
+</ol>
+</li>
+<li><a href="#404">404问题解决</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -188,6 +338,9 @@ On this page
 <iframe style="display:none;height:0;width:0" id="link-preview-iframe" src="">
 </iframe>
 <script>var opacityTimeout,contentTimeout,transitionDurationMs=100,iframe=document.getElementById("link-preview-iframe"),tooltipWrapper=document.getElementById("tooltip-wrapper"),tooltipContent=document.getElementById("tooltip-content"),linkHistories={};function hideTooltip(){opacityTimeout=setTimeout((function(){tooltipWrapper.style.opacity=0,contentTimeout=setTimeout((function(){tooltipContent.innerHTML="",tooltipWrapper.style.display="none"}),transitionDurationMs+1)}),transitionDurationMs)}function showTooltip(t){var e=t.target,o=e.getClientRects()[e.getClientRects().length-1],i=window.pageYOffset||document.documentElement.scrollTop,n=t.target.getAttribute("href");if(-1===n.indexOf("http")||-1!==n.indexOf(window.location.host)){let t=n.split("#")[0];linkHistories[t]?(tooltipContent.innerHTML=linkHistories[t],tooltipWrapper.style.display="block",setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)):(iframe.src=t,iframe.onload=function(){tooltipContentHtml="",tooltipContentHtml+='<div style="font-weight: bold; unicode-bidi: plaintext;">'+iframe.contentWindow.document.querySelector("h1").innerHTML+"</div>",tooltipContentHtml+=iframe.contentWindow.document.querySelector(".content").innerHTML,tooltipContent.innerHTML=tooltipContentHtml,linkHistories[t]=tooltipContentHtml,tooltipWrapper.style.display="block",tooltipWrapper.scrollTop=0,setTimeout((function(){if(tooltipWrapper.style.opacity=1,-1!=n.indexOf("#")){let t=n.split("#")[1];const e=tooltipWrapper.querySelector(`[id='${t}']`);e.classList.add("referred"),console.log(e),e.scrollIntoView({behavior:"smooth"},!0)}else tooltipWrapper.scroll(0,0)}),1)}),tooltipWrapper.style.left=o.left-tooltipWrapper.offsetWidth/2+o.width/2+"px",window.innerHeight-o.top<tooltipWrapper.offsetHeight?tooltipWrapper.style.top=o.top+i-tooltipWrapper.offsetHeight-10+"px":window.innerHeight-o.top>tooltipWrapper.offsetHeight&&(tooltipWrapper.style.top=o.top+i+35+"px"),o.left+o.width/2<tooltipWrapper.offsetWidth/2?tooltipWrapper.style.left="10px":document.body.clientWidth-o.left-o.width/2<tooltipWrapper.offsetWidth/2&&(tooltipWrapper.style.left=document.body.clientWidth-tooltipWrapper.offsetWidth-20+"px")}}function setupListeners(t){t.addEventListener("mouseleave",(function(t){hideTooltip()})),tooltipWrapper.addEventListener("mouseleave",(function(t){hideTooltip()})),t.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout),showTooltip(t)})),tooltipWrapper.addEventListener("mouseenter",(function(t){clearTimeout(opacityTimeout),clearTimeout(contentTimeout)}))}window.addEventListener("load",(function(t){document.querySelectorAll(".internal-link").forEach(setupListeners),document.querySelectorAll(".backlink-card a").forEach(setupListeners)}))</script>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="yyyy-LL-dd",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
 <script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
 </body>
 </html>
