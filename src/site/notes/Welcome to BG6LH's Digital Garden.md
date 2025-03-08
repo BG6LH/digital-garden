@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"dg-path":"welcome.md","dg-permalink":"welcome","permalink":"/welcome/","tags":["gardenEntry"]}
+{"dg-publish":true,"dg-path":"welcome.md","dg-permalink":"/welcome-to-bg6lh-digital-garden/","permalink":"/welcome-to-bg6lh-digital-garden/","tags":["gardenEntry"]}
 ---
 
 
-![img-Welcome.jpg|800](/img/user/Digital%20Garden/assets/img-Welcome.jpg)
+![img-Welcome to BG6LH's Digital Garden.jpg|800](/img/user/assets/Welcome%20to%20BG6LH's%20Digital%20Garden/img-Welcome%20to%20BG6LH's%20Digital%20Garden.jpg)
 
 # 欢迎来到 BG6LH 的 Digtal Garden #Welcome
 
