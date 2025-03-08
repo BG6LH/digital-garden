@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"/welcome-to-bg6lh-digital-garden/","permalink":"/welcome-to-bg6lh-digital-garden/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/Welcome to BG6LH's Digital Garden/","tags":["gardenEntry"]}
 ---
 
 
