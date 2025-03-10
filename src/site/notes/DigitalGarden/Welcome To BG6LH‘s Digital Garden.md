@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"Welcome To BG6LH‘s Digital Garden","pinned":true,"tags":["gardenEntry","gardenEntry"],"noteIcon":"","created":"2025-03-07, 03:59:33","updated":"2025-03-10, 02:00:49"}
+{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"Welcome To BG6LH‘s Digital Garden","pinned":true,"tags":["gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"","created":"2025-03-07, 03:59:33","updated":"2025-03-10, 02:00:49"}
 ---
 
 
