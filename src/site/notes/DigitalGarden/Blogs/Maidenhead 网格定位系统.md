@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"Blogs/maidenhead-locator-system.md","permalink":"/Blogs/maidenhead-locator-system/","title":"Maidenhead 网格定位系统","tags":["clippings"],"noteIcon":"","created":"2025-03-08, 03:43:31","updated":"2025-03-10, 01:51:26"}
+{"dg-publish":true,"dg-path":"Blogs/maidenhead-locator-system.md","permalink":"/Blogs/maidenhead-locator-system/","title":"Maidenhead 网格定位系统","tags":["业余无线电"],"noteIcon":"","created":"2025-03-08, 03:43:31","updated":"2025-03-10, 01:51:26"}
 ---
 
 
