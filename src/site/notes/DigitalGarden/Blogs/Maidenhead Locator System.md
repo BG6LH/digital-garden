@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"blogs/maidenhead-locator-system","permalink":"/blogs/maidenhead-locator-system/","title":"Maidenhead Locator System","tags":["clippings"],"noteIcon":"","created":"2018-06-06","updated":"2025-03-10"}
+{"dg-publish":true,"dg-path":"/Blogs/maidenhead-locator-system","permalink":"//Blogs/maidenhead-locator-system/","title":"Maidenhead Locator System","tags":["clippings"],"noteIcon":"","created":"2018-06-06","updated":"2025-03-10"}
 ---
 
 
