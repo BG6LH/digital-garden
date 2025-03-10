@@ -3,14 +3,14 @@
     <title>BG6LH&#39;s Digital Garden</title>
     <link href="https://bg6lh.github.io//feed.xml" rel="self" >
     <link href="https://bg6lh.github.io/" >
-    <updated>2025-03-10T15:18:50Z</updated>
+    <updated>2025-03-10T15:27:30Z</updated>
     <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
                 欢迎来到BG6LH的数字花园
                 
             </title>
-            <updated>2025-03-10T15:18:39Z</updated>
+            <updated>2025-03-10T15:27:22Z</updated>
             <id>https://bg6lh.github.io//</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/Welcome%20to%20BG6LH&#39;s%20Digital%20Garden/img-Welcome%20to%20BG6LH&#39;s%20Digital%20Garden.jpg&quot; alt=&quot;img-Welcome to BG6LH&#39;s Digital Garden.jpg|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
@@ -31,7 +31,7 @@
                 Maidenhead 网格定位系统
                 
             </title>
-            <updated>2025-03-10T15:18:39Z</updated>
+            <updated>2025-03-10T15:27:22Z</updated>
             <id>https://bg6lh.github.io//Blogs/maidenhead-locator-system/</id>
             <content type="html">
                 &lt;p&gt;梅登黑德网格是一种用于报告电台位置的定位系统，最早在1980年4月由VHF工作组在梅登黑德决定使用。网格由五个字符对组成，其中前两个字符表示Field，接下来的两个字符表示Square，最后两个字符表示Subsquare。在短波领域通常报告到Square，而在V/UHF则报告到Subsquare。&lt;/p&gt;
@@ -67,7 +67,7 @@
                 DIY FT-817 数据电缆
                 
             </title>
-            <updated>2025-03-10T15:18:39Z</updated>
+            <updated>2025-03-10T15:27:22Z</updated>
             <id>https://bg6lh.github.io//Blogs/diy-ft-817-data-cable/</id>
             <content type="html">
                 &lt;p&gt;为了在FT-817上更方便地玩FT8，我做了一根DATA电脑连接线。配合以前买的一根写频线控制FT-817的PTT，整个系统工作的很顺溜。连接线的制作方法很简单，主要材料是一根标准MD6的线，两个立体声插头，一个USB声卡，直接连到一起就搞定。&lt;/p&gt;
