@@ -3,7 +3,7 @@
     <title>BG6LH&#39;s Digital Garden</title>
     <link href="https://bg6lh.github.io//feed.xml" rel="self" >
     <link href="https://bg6lh.github.io/" >
-    <updated>2025-03-10T14:34:31Z</updated>
+    <updated>2025-03-10T14:52:15Z</updated>
     <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
@@ -31,7 +31,7 @@
                 Maidenhead 网格定位系统
                 
             </title>
-            <updated>2025-03-10T01:51:26.000Z</updated>
+            <updated>2025-03-10T02:47:45.000Z</updated>
             <id>https://bg6lh.github.io//Blogs/maidenhead-locator-system/</id>
             <content type="html">
                 &lt;p&gt;梅登黑德网格是一种用于报告电台位置的定位系统，最早在1980年4月由VHF工作组在梅登黑德决定使用。网格由五个字符对组成，其中前两个字符表示Field，接下来的两个字符表示Square，最后两个字符表示Subsquare。在短波领域通常报告到Square，而在V/UHF则报告到Subsquare。&lt;/p&gt;
