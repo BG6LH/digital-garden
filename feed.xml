@@ -3,18 +3,17 @@
     <title>BG6LH&#39;s Digital Garden</title>
     <link href="https://bg6lh.github.io//feed.xml" rel="self" />
     <link href="https://bg6lh.github.io/" />
-    <updated>2025-03-10T13:23:10Z</updated>
+    <updated>2025-03-10T13:58:44Z</updated>
     <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
                 Welcome
                 
             </title>
-            <updated>2025-03-10T13:23:02Z</updated>
+            <updated>2025-03-10T01:50:26.000Z</updated>
             <id>https://bg6lh.github.io//</id>
             <content type="html">
-                &lt;h1 id=&quot;welcome-to-bg-6-lh-s&quot; tabindex=&quot;-1&quot;&gt;Welcome To BG6LH&#39;s的数字花园&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/Welcome%20to%20BG6LH&#39;s%20Digital%20Garden/img-Welcome%20to%20BG6LH&#39;s%20Digital%20Garden.jpg&quot; alt=&quot;img-Welcome to BG6LH&#39;s Digital Garden.jpg|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/Welcome%20to%20BG6LH&#39;s%20Digital%20Garden/img-Welcome%20to%20BG6LH&#39;s%20Digital%20Garden.jpg&quot; alt=&quot;img-Welcome to BG6LH&#39;s Digital Garden.jpg|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;这是一个新的开始，我正在使用Obsidian建立我的个人知识库，并且用上了AI，管理、建设我的本地化知识体系，包括我的工作、及爱好&lt;/li&gt;
 &lt;li&gt;这些年，我玩业余无线电的心得，大多数都发布在我的微信公众号上&lt;/li&gt;
@@ -32,11 +31,10 @@
                 Maidenhead 网格定位系统
                 
             </title>
-            <updated></updated>
-            <id>https://bg6lh.github.io//maidenhead-locator-system/</id>
+            <updated>2025-03-10T01:51:26.000Z</updated>
+            <id>https://bg6lh.github.io//Blogs/maidenhead-locator-system/</id>
             <content type="html">
-                &lt;h1 id=&quot;maidenhead&quot; tabindex=&quot;-1&quot;&gt;Maidenhead 定位网格系统&lt;/h1&gt;
-&lt;p&gt;梅登黑德网格是一种用于报告电台位置的定位系统，最早在1980年4月由VHF工作组在梅登黑德决定使用。网格由五个字符对组成，其中前两个字符表示Field，接下来的两个字符表示Square，最后两个字符表示Subsquare。在短波领域通常报告到Square，而在V/UHF则报告到Subsquare。&lt;/p&gt;
+                &lt;p&gt;梅登黑德网格是一种用于报告电台位置的定位系统，最早在1980年4月由VHF工作组在梅登黑德决定使用。网格由五个字符对组成，其中前两个字符表示Field，接下来的两个字符表示Square，最后两个字符表示Subsquare。在短波领域通常报告到Square，而在V/UHF则报告到Subsquare。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;梅登黑德网格由VHF工作组在1980年决定采用。&lt;/li&gt;
 &lt;li&gt;网格由五个字符对组成：Field、Square和Subsquare。&lt;/li&gt;
@@ -62,18 +60,17 @@
 &lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Maidenhead_grid_over_Europe.svg/584px-Maidenhead_grid_over_Europe.svg.png&quot; alt=&quot;Square的顺序&quot; /&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://bg6lh.github.io//maidenhead-locator-system/" />
+            <link href="https://bg6lh.github.io//Blogs/maidenhead-locator-system/" />
         </entry>
         <entry>
             <title>
                 DIY FT-817 数据电缆
                 
             </title>
-            <updated>2025-03-10T01:22:28.000Z</updated>
-            <id>https://bg6lh.github.io//diy-ft-817-data-cable/</id>
+            <updated>2025-03-10T01:50:39.000Z</updated>
+            <id>https://bg6lh.github.io//Blogs/diy-ft-817-data-cable/</id>
             <content type="html">
-                &lt;h1 id=&quot;diy-ft-817&quot; tabindex=&quot;-1&quot;&gt;DIY FT-817 数据电缆&lt;/h1&gt;
-&lt;p&gt;为了在FT-817上更方便地玩FT8，我做了一根DATA电脑连接线。配合以前买的一根写频线控制FT-817的PTT，整个系统工作的很顺溜。连接线的制作方法很简单，主要材料是一根标准MD6的线，两个立体声插头，一个USB声卡，直接连到一起就搞定。&lt;/p&gt;
+                &lt;p&gt;为了在FT-817上更方便地玩FT8，我做了一根DATA电脑连接线。配合以前买的一根写频线控制FT-817的PTT，整个系统工作的很顺溜。连接线的制作方法很简单，主要材料是一根标准MD6的线，两个立体声插头，一个USB声卡，直接连到一起就搞定。&lt;/p&gt;
 &lt;h2 id=&quot;ft-817-data&quot; tabindex=&quot;-1&quot;&gt;关于FT-817的DATA接口&lt;/h2&gt;
 &lt;p&gt;这个DATA接口，它的名字叫“数据”，其实是通过&lt;strong&gt;音频电平&lt;/strong&gt;、也就是音量，来跟其它设备进行信号传递的一种接口。这是一个彻头彻脑的“音频”设备。&lt;/p&gt;
 &lt;p&gt;FT8用AFSK模式调制信号。AFSK是&lt;strong&gt;音频&lt;/strong&gt;的频移键控。电台收发的是一种音频调制信号。这个声音通过电缆传送到电脑声卡里，再用的wsjt-x这类软件解调、播放声音，这个体系就是这样工作起来的。&lt;/p&gt;
@@ -186,6 +183,6 @@
 &lt;p&gt;BTW：&lt;strong&gt;观察系统的Audio MIDI Setup，降到-29dB左右&lt;/strong&gt;，这段我也不确定效果如何，因为最终我发现USB声卡音量从大到小，FT-817的ALC电平几乎没变化。而且我FT-817上DIG MIC、SSB MIC、PSK MIC 的设置，都是默认的50，发射起来ALC很稳定，四、五格。这可能跟我加了磁环有关系？&lt;/p&gt;
 
             </content>
-            <link href="https://bg6lh.github.io//diy-ft-817-data-cable/" />
+            <link href="https://bg6lh.github.io//Blogs/diy-ft-817-data-cable/" />
         </entry>
 </feed>
