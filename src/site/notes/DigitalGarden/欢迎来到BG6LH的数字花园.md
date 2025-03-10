@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"欢迎来到BG6LH的数字花园","pinned":true,"tags":["BG6LH","业余无线电","ODG","数字花园","gardenEntry"],"noteIcon":"","created":"2025-03-07, 03:59:33","updated":"2025-03-10, 02:24:27"}
+{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"欢迎来到BG6LH的数字花园","pinned":true,"tags":["BG6LH","ODG","业余无线电","数字花园","gardenEntry"],"noteIcon":"","created":"2025-03-07, 03:59:33","updated":"2025-03-10, 02:33:47"}
 ---
 
 
