@@ -3,14 +3,14 @@
     <title>BG6LH&#39;s Digital Garden</title>
     <link href="https://bg6lh.github.io//feed.xml" rel="self" />
     <link href="https://bg6lh.github.io/" />
-    <updated>2025-03-08T19:48:27Z</updated>
+    <updated>2025-03-10T04:16:20Z</updated>
     <id>https://bg6lh.github.io/</id>
         <entry>
             <title>
                 Welcome to BG6LH&#39;s Digital Garden
                 
             </title>
-            <updated>2025-03-08T19:48:19Z</updated>
+            <updated>2025-03-10T04:16:07Z</updated>
             <id>https://bg6lh.github.io//</id>
             <content type="html">
                 &lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/Welcome%20to%20BG6LH&#39;s%20Digital%20Garden/img-Welcome%20to%20BG6LH&#39;s%20Digital%20Garden.jpg&quot; alt=&quot;img-Welcome to BG6LH&#39;s Digital Garden.jpg|800&quot; width=&quot;800px&quot; /&gt;&lt;/p&gt;
@@ -33,7 +33,7 @@
                 Depoly Obsidian Digital Garden on Github Pages
                 
             </title>
-            <updated>2025-03-08T19:48:19Z</updated>
+            <updated>2025-03-10T04:16:07Z</updated>
             <id>https://bg6lh.github.io//Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/</id>
             <content type="html">
                 &lt;blockquote&gt;
@@ -179,5 +179,129 @@ jobs:
 
             </content>
             <link href="https://bg6lh.github.io//Docs/Depoly-Obsidian-Digital-Garden-on-Github-Pages/" />
+        </entry>
+        <entry>
+            <title>
+                DIY FT-817 数据电缆
+                
+            </title>
+            <updated>2025-03-10T04:16:07Z</updated>
+            <id>https://bg6lh.github.io//DIY-FT-817-DATA-Cable/</id>
+            <content type="html">
+                &lt;h1 id=&quot;diy-ft-817&quot; tabindex=&quot;-1&quot;&gt;DIY FT-817 数据电缆&lt;/h1&gt;
+&lt;p&gt;为了在FT-817上更方便地玩FT8，我做了一根DATA电脑连接线。配合以前买的一根写频线控制FT-817的PTT，整个系统工作的很顺溜。连接线的制作方法很简单，主要材料是一根标准MD6的线，两个立体声插头，一个USB声卡，直接连到一起就搞定。&lt;/p&gt;
+&lt;h2 id=&quot;ft-817-data&quot; tabindex=&quot;-1&quot;&gt;关于FT-817的DATA接口&lt;/h2&gt;
+&lt;p&gt;这个DATA接口，它的名字叫“数据”，其实是通过&lt;strong&gt;音频电平&lt;/strong&gt;、也就是音量，来跟其它设备进行信号传递的一种接口。这是一个彻头彻脑的“音频”设备。&lt;/p&gt;
+&lt;p&gt;FT8用AFSK模式调制信号。AFSK是&lt;strong&gt;音频&lt;/strong&gt;的频移键控。电台收发的是一种音频调制信号。这个声音通过电缆传送到电脑声卡里，再用的wsjt-x这类软件解调、播放声音，这个体系就是这样工作起来的。&lt;/p&gt;
+&lt;p&gt;我要做的这根线，就是电台到电脑的这段连接电缆。&lt;/p&gt;
+&lt;h2 id=&quot;材料清单&quot; tabindex=&quot;-1&quot;&gt;材料清单&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;一根Mini-Din 6（MD6）的标准连接线&lt;/strong&gt; 这跟键盘鼠标用的PS/2线接口完全一样。但是PS/2键盘鼠标线大多数省略了2、6两根连线，对于DATA输入输出来说缺了接地线。所以一定要买一根标准的MD6连接线。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个USB声卡(带3.5mm的音频输入输出）&lt;/strong&gt; 这是为了把FT8的音频信号，跟系统其它软件的音效彻底隔离开。况且我这个2015年的MBP也没有音频输入接口了，只能靠电脑的内置麦克风“听”旁边电台的声音。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;两个3.5mm立体声插头&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一根FT-817的ACC控制线&lt;/strong&gt; 如果你想让电脑来自主控制电台的信号收发，就需要这根线。这是一根USB转TTL的编程线、写频线，最早买来是为了给817写频用的，PL-2302芯片的。&lt;/li&gt;
+&lt;li&gt;最后在准备一些磁环，套在做好的线两端，用来抑制杂散信号的干扰。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;ft-817-data-1&quot; tabindex=&quot;-1&quot;&gt;FT-817的DATA接口&lt;/h2&gt;
+&lt;p&gt;在FT-817手册的第38/41页，有两张图，说明了DATA接口的连线方案。FT8使用的是AFSK调制模式，只用到了DATA接口的1200bps的针脚接口。所以参考38页那个也行。下边这个是41页那张图，说明了DATA接口所有的定义和连接方式。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/diy-ft-817-data-cable.png&quot; alt=&quot;FT-817 DATA接口定义&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MD6接口的定义：&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/diy-ft-817-data-cable-1.png&quot; alt=&quot;插座正面&quot; /&gt;&lt;/th&gt;
+&lt;th&gt;插座正面图&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img src=&quot;https://bg6lh.github.io/img/user/assets/diy-ft-817-data-cable-2.png&quot; alt=&quot;插座镜像&quot; /&gt;&lt;/td&gt;
+&lt;td&gt;连线的时候要注意，对应的是插座正面的镜像标准画法反面图的针脚应该是黑色的圆点，表示是针&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;下边这张对照表，对应了DATA针脚定义、YAESU的CT-39A连接线的线束颜色、我买的MD6的线束颜色、3.5mm立体声接头的接线对照表。我没买CT-39A，我买的那个MD6线的颜色也不是标准的。所以要用万用表一个个测量，对应出每个针脚的位置。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;针脚&lt;/th&gt;
+&lt;th&gt;标签&lt;/th&gt;
+&lt;th&gt;CT-39A&lt;/th&gt;
+&lt;th&gt;我的MD6线的颜色&lt;/th&gt;
+&lt;th&gt;声卡接线方式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;PKD&lt;/td&gt;
+&lt;td&gt;褐色&lt;/td&gt;
+&lt;td&gt;蓝色&lt;/td&gt;
+&lt;td&gt;Line Out / Green&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;GND&lt;/td&gt;
+&lt;td&gt;红色&lt;/td&gt;
+&lt;td&gt;紫色&lt;/td&gt;
+&lt;td&gt;Line I/O GND&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;PTT&lt;/td&gt;
+&lt;td&gt;橙色&lt;/td&gt;
+&lt;td&gt;黄色&lt;/td&gt;
+&lt;td&gt;空&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;RX9600&lt;/td&gt;
+&lt;td&gt;黄色&lt;/td&gt;
+&lt;td&gt;白色&lt;/td&gt;
+&lt;td&gt;空&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;RX1200&lt;/td&gt;
+&lt;td&gt;绿色&lt;/td&gt;
+&lt;td&gt;黑色&lt;/td&gt;
+&lt;td&gt;Line In / Red&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;PKS(SQL)&lt;/td&gt;
+&lt;td&gt;蓝色&lt;/td&gt;
+&lt;td&gt;褐色&lt;/td&gt;
+&lt;td&gt;空&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&quot;关于声卡的技术参数&quot; tabindex=&quot;-1&quot;&gt;关于声卡的技术参数&lt;/h2&gt;
+&lt;p&gt;网上有一些成品化的连接器方案。比如使用了音频隔离变压器、光偶合的ACC控制电路。我这个主要还是因为只在QRP设备上用，没考虑太多。但是咨询了卖家这个USB声卡的参数，得到了一些参考数据。&lt;/p&gt;
+&lt;p&gt;这是绿联的US205 USB声卡，用的是HS-100B芯片的USB声卡方案，据卖家讲：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Line-OUT：负载16Ω，功率可达60mW。所以我推算峰值输出电压不高于980mV&lt;/li&gt;
+&lt;li&gt;MIC-IN：输入57mV，输出功率是0dBFS，失真小于0.02，当超过57mV时，失真就会开始急剧加大；最大输入可达到125mV，输入功率为2dBFS，失真24%&lt;/li&gt;
+&lt;li&gt;MIC-IN：输入57mV，输出功率是0dBFS，失真小于0.02，当超过57mV时，失真就会开始急剧加大；最大输入可达到125mV，输入功率为2dBFS，失真24%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在FT-817的DATA接口的电压指标是这样的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;封包数据输入（对应声卡的Line-OUT）：阻抗10 kΩ；最大输入电压40 mVpp 用于 1200 bps；2.0 Vpp 用于 9600 bps&lt;/li&gt;
+&lt;li&gt;1200 bps 封包数据输出（对应声卡的MIC-IN）：阻抗10 kΩ，最大输出电压300 mVpp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所以，在音频方面，个人感觉：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;发射时，把USB声卡的音量降低，可以降低输出电压，观察系统的Audio MIDI Setup，降到-29dB左右，可以匹配到817的信号输入电压。具体表现还是要观察ALC电平指示，4-5格就不错了。&lt;/li&gt;
+&lt;li&gt;接收时，因为817的DATA接口提供的输出功率是固定的，所以显然大于USB声卡最佳电压两三倍了，按客服说的“信号失真24%”了。不过这对于FT8来说还能接受吧。在接收本地电台的FT8时、还有信噪比很高的信号时，瀑布上总是有附近频率产生的干扰信号，可能就是这个失真带来的问题吧。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我在各种线上都加了磁环，这套线目前性能稳定。我也担心传说中的烧817的话题，买个连接盒子还是更好些。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接收时，因为817的DATA接口提供的输出功率是固定的，所以显然大于USB声卡最佳电压两三倍了，按客服说的“信号失真24%”了。不过这对于FT8来说还能接受吧。在接收本地电台的FT8时、还有信噪比很高的信号时，瀑布上总是有附近频率产生的干扰信号，可能就是这个失真带来的问题吧。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我在各种线上都加了磁环，这套线目前性能稳定。我也担心传说中的烧817的话题，买个连接盒子还是更好些。&lt;/p&gt;
+&lt;p&gt;BTW：&lt;strong&gt;观察系统的Audio MIDI Setup，降到-29dB左右&lt;/strong&gt;，这段我也不确定效果如何，因为最终我发现USB声卡音量从大到小，FT-817的ALC电平几乎没变化。而且我FT-817上DIG MIC、SSB MIC、PSK MIC 的设置，都是默认的50，发射起来ALC很稳定，四、五格。这可能跟我加了磁环有关系？&lt;/p&gt;
+
+            </content>
+            <link href="https://bg6lh.github.io//DIY-FT-817-DATA-Cable/" />
         </entry>
 </feed>
