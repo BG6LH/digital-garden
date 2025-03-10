@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"dg-path":"Blogs/maidenhead-locator-system.md","permalink":"/Blogs/maidenhead-locator-system/","title":"Maidenhead 网格定位系统","tags":["业余无线电"]}
+{"dg-publish":true,"dg-path":"Blogs/maidenhead-locator-system.md","permalink":"/Blogs/maidenhead-locator-system/","title":"Maidenhead 网格定位系统","tags":["业余无线电"],"created":"2018-06-06, 03:43:31","updated":"2025-03-10, 02:47:45"}
 ---
+
 
 
 梅登黑德网格是一种用于报告电台位置的定位系统，最早在1980年4月由VHF工作组在梅登黑德决定使用。网格由五个字符对组成，其中前两个字符表示Field，接下来的两个字符表示Square，最后两个字符表示Subsquare。在短波领域通常报告到Square，而在V/UHF则报告到Subsquare。
