@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"欢迎来到BG6LH的数字花园","pinned":true,"tags":["gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"欢迎来到BG6LH的数字花园","pinned":true,"tags":["gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 

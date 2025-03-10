@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/DigitalGarden/Blogs/Maidenhead 网格定位系统/","title":"Maidenhead 定位网格系统","tags":["clippings"],"noteIcon":"","created":"2025 03 08, 3:43:31 下午","updated":"2025 03 10, 1:15:45 下午"}
+{"dg-publish":true,"dg-path":"maidenhead-locator-system.md","permalink":"/maidenhead-locator-system/","title":"Maidenhead 定位网格系统","tags":["clippings"],"noteIcon":"","created":"2025 03 08, 3:43:31 下午","updated":"2025 03 10, 1:15:45 下午"}
 ---
 
 
