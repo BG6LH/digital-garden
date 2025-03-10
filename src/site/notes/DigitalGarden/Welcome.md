@@ -1,9 +1,7 @@
 ---
-{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"欢迎来到BG6LH的数字花园","pinned":true,"tags":["gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"dg-path":"welcome.md","permalink":"/welcome/","title":"Welcome","pinned":true,"tags":["gardenEntry"],"noteIcon":"","created":"2025-03-07, 03:59:33","updated":"2025-03-10, 01:50:26"}
 ---
 
-
-# Welcome To BG6LH's的数字花园
 
 ![img-Welcome to BG6LH's Digital Garden.jpg|800](/img/user/assets/Welcome%20to%20BG6LH's%20Digital%20Garden/img-Welcome%20to%20BG6LH's%20Digital%20Garden.jpg)
 
